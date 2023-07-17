@@ -57,7 +57,7 @@ a {
 a:hover {
     color: #FBC658;
     background-color: transparent;
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 .intro-container {
@@ -210,6 +210,11 @@ a:hover {
     border: 2px solid white;
     margin-right: 20px;
     padding: 5px 20px 5px 20px;
+}
+
+.call-sign:hover {
+    background-color: white;
+    color: #e4532f;
 }
 
 .footer-container {
