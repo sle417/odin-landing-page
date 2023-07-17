@@ -3,31 +3,49 @@
 */
 
 body {
-    background-image: url(images/99173.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    margin: 0;
 }
 
-.navbar-container{
+.navbar-container,
+.intro-container,
+.footer-container {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed,
+        url(images/99173.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #f9faf8;
+    text-shadow: 0px 0px 5px black,
+        0px 0px 20px black,
+        0px 0px 40px white;
+
+}
+
+.navbar-container {
     display: flex;
     flex-direction: row;
+    padding-bottom: 20px;
 }
 
 .logo {
     display: flex;
-    color: white;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex: 1;
+    color: white;
+    margin-top: 40px;
 }
 
 .nav-links {
     display: flex;
-    gap: 10px;
     align-items: center;
     justify-content: center;
     flex: 1;
-    margin-bottom: 35px;
-    margin-top: 35px;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 a {
@@ -37,34 +55,167 @@ a {
 }
 
 a:hover {
-    color: green;
+    color: #FBC658;
     background-color: transparent;
     text-decoration: underline;
 }
 
 .intro-container {
-    flex-direction: column;
     display: flex;
     flex: 1;
+    justify-content: space-evenly;
+    padding-top: 140px;
+    flex-wrap: wrap;
+    padding-bottom: 220px;
+
 }
 
 .intro-container p {
     width: 400px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
 }
 
-.sign-up {
-    display: flex;
-    align-items: center;
-    background-color: black;
-    color: white;
+.intro-container h1 {
+    font-size: 48px;
 }
 
 .left-sidekick {
+    display: flex;
     color: white;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.right-sidekick .landing-image{
-    width: 300px;
-    border: 3px solid white;
+.right-sidekick {
+    display: flex;
+}
+
+
+.sign-up {
+    display: flex;
+    width: 100px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    align-self: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.landing-image {
+    width: 400px;
+    border: 2px solid white;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 80px;
+    align-items: center;
+    gap: 100px;
+    background-color: #191C2C;
+}
+
+.content-title {
+    display: flex;
+    background-color: #191C2C;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    padding-top: 40px;
+}
+
+.content-image {
+    margin-top: 50px;
+    width: 144px;
+    height: 144px;
+    /* border: 3px solid #f7601b; */
+    background-image: linear-gradient(180deg, #E4532F, rgba(0, 0, 0, 0));
+    border-radius: 20px;
+    transition: ease 0.1s;
+}
+
+.card {
+    color: white;
+    width: 150px;
+    margin-top: -20px;
+}
+
+.quote {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background: url(images/cityscape.jpg) no-repeat center center fixed;
+    padding: 130px;
+    gap: 30px;
+    background-size: cover;
+    font-size: 36px;
+    font-weight:lighter;
+    font-style: italic;
+    color:#1F2937;
+    text-shadow: 0 0 5px #f9faf8,
+    0 0 15px #f9faf8,
+    0 0 30px #f9faf8;
+}
+
+.call-action {
+    background-color: #191c2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 100px;
+}
+
+
+.call {
+    background-color: #E4532F;
+    border-radius: 5px;
+    padding: 25px 25px 25px 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.call-msg {
+    width: 350px;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.call-msg h2 {
+    margin-bottom: -12px;
+    font-size: 16px;
+}
+
+.call-sign {
+    border-color: white;
+    background-color: #E4532F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 2px solid white;
+    margin-right: 20px;
+    padding: 5px 20px 5px 20px;
+}
+
+.footer-container {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
